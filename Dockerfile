@@ -12,4 +12,4 @@ COPY . /usr/src/app/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "config.wsgi:application"]
+CMD ["gunicorn", "--bind", ":5000", "--workers", "3", "config.wsgi:application"]
